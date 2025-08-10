@@ -1,0 +1,30 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --config ./webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/jquery": "^3.5.32",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.0",
+    "bootstrap": "^5.3.7",
+    "jquery": "^3.7.1",
+    "sweetalert2": "^11.22.2",
+    "ts-json-object": "^0.4.1"
+  }
+}

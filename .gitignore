@@ -1,0 +1,24 @@
+# Ignore Composer vendor directory
+vendor/*
+
+# Ignore Node.js dependencies
+TS/node_modules/*
+
+# Ignore local storage for the application
+storage/
+
+# Ignore IDE configuration folders
+.vscode/
+.idea/
+
+# Ignore Docker-related files
+*.log
+*.pid
+*.swp
+docker-compose.override.yml
+
+# Ignore environment file containing sensitive information
+.env
+
+# Ignore PHPUnit configuration and cache files
+.phpunit.cache

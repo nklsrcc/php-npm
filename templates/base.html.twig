@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+            {% include 'partials/favicon.html.twig' %}
+
+
+            <title>{% block title %}{{ appTitle }} {% endblock %} </title>
+
+        <script> const APP_BACKEND_URL = "{{ appBEUrl }}" </script>
+
+        <script src="{{ getMainJS }}"></script>
+    {% endblock %}
+</head>
+<body class="bg-light text-center py-5">
+
+<div class="container" id="content">
+    {% block content %}{% endblock %}
+</div>
+<div id="footer">
+    {% block footer %}
+        &copy; Copyright {{ year }} by {{ devName }}.
+    {% endblock %}
+</div>
+</body>
+</html>

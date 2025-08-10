@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{{ appTitle }}{% endblock %} {# To ovverride the title if necessary #}
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        .important {
+            color: #336699;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <p class="important"> Welcome on my awesome homepage.</p>
+
+    <div style="text-align: center; display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap">
+        <button id="getStringsIt">Ottieni traduzioni</button>
+        <button id="getStringsDef">Get translations</button>
+        <button id="getStringsFr">Obtenez des traductions</button>
+        <button id="popError">Error</button>
+        <button id="popNotice">Notice</button>
+    </div>
+{% endblock %}
