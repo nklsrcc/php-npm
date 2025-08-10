@@ -16,10 +16,9 @@ Before you begin, ensure you have the following installed:
 
 ### 1. Clone the repository
 
-Clone the repository to your local machine. Replace `<repo_url>` with the actual URL of your Git repository.
 
 ```bash
-    git clone <repo_url>
+    git clone https://github.com/nklsrcc/php-npm.git
 ```
 
 ### 2. Navigate to your project folder
@@ -27,7 +26,7 @@ Clone the repository to your local machine. Replace `<repo_url>` with the actual
 Change to your project directory:
 
 ```bash
-    git clone <repo_url>
+    cd php-npm
 ```
 
 ### 3. Set up environment variables
@@ -51,7 +50,7 @@ Run the following command to build and start the Docker containers:
 
 This will:
 
-- Build the PHP, Node.js, Nginx, and database containers.
+- Build the PHP, Node.js, Nginx, and database containers and even run the npm run build command.
 - Start the containers in detached mode (-d), meaning they will run in the background.
 
 ### 5. Install dependencies (if not automated)
@@ -69,10 +68,10 @@ Enter the PHP container and install PHP dependencies using Composer:
 
 #### Node.js Dependencies:
 
-Enter the frontend container (where package.json is located) and install Node.js dependencies using npm:
+Enter the frontend folder name TS (where package.json is located) and install Node.js dependencies using npm:
 
 ```bash
-    docker exec -it <php_container_name> bash
+    cd TS
     npm install
 ```
 
@@ -81,7 +80,7 @@ Enter the frontend container (where package.json is located) and install Node.js
 Once the containers are up and running, you can access the application in your browser:
 
 ```bash
-    http://localhost:8080
+    http://localhost:80
 ```
 
 ### 7. Stopping the Docker Containers
