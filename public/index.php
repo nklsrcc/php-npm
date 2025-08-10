@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Nick\App\Database\DBHandler;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 

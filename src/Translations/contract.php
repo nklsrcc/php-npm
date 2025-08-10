@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 use Nick\App\Translations\En;
-use Nick\App\Translations\It;
 use Nick\App\Translations\Fr;
+use Nick\App\Translations\It;
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 

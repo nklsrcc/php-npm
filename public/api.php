@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Nick\App\Controllers\HomeController;
 use Nick\App\Controllers\AppController;
+use Nick\App\Controllers\HomeController;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -13,7 +13,6 @@ $dotenv->safeLoad();
 $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/', [HomeController::class, 'index']);
     $r->addRoute('GET', '/strings', [AppController::class, 'get_strings']);
-
 });
 
 $httpMethod = $_SERVER['REQUEST_METHOD'];

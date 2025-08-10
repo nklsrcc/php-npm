@@ -1,4 +1,3 @@
-import {SweetAlertIcon} from "../Types/SweetAlert/SweetAlertIcon";
 import Swal from "sweetalert2";
 import {TAlert} from "../Types/SweetAlert/TAlert";
 import {PopFactory} from "../Types/SweetAlert/PopFactory";

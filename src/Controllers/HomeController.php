@@ -7,11 +7,13 @@ namespace Nick\App\Controllers;
 use Exception;
 use Nick\App\Database\DBHandler;
 
-class HomeController {
+class HomeController
+{
     /**
      * @throws Exception
      */
-    public static function index(): void {
+    public static function index(): void
+    {
         header('Content-Type: application/json');
 
         $data = DBHandler::getInstance()->HomeLayerIndex();
